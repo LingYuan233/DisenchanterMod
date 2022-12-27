@@ -66,7 +66,10 @@ public class DisenchanterRecipe extends SpecialCraftingRecipe {
         }
 
         if (hasBook && hasCore && hasTool && count==3){
-            return tool.getItem().getDefaultStack();
+            int d = tool.getDamage();
+            ItemStack i = tool.getItem().getDefaultStack();
+            i.setDamage(d);
+            return i;
         }
         return ItemStack.EMPTY;
     }
