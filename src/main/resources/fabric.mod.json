@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "disenchanter",
+  "version": "1.0",
+
+  "name": "Disenchanter",
+  "description": "",
+  "authors": [
+    "Ling_Yuan"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/disenchanter/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.furryliy.disenchanter.Main"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
